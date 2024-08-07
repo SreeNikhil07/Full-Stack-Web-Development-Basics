@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male">
+                Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female">
+                Female
+            </label>
+            <label for="other">
+                <input type="radio" id="other" name="gender" value="other">
+                Other
+            </label>
+        </fieldset>
+        <br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="Ind">India</option>
+            <option value="UAE">United Arab Emirates</option>
+            <option value="Sing">Singapore</option>
+            <option value="Ger">Germany</option>
+            <option value="Nig">Nigeria</option>
+            <option value="RSA">South Africa</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
